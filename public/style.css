@@ -1,0 +1,50 @@
+body{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:1200px;
+}
+.jumbotron{
+	background-image:url(banner.jpg);
+	background-size:cover;
+	text-align:center;
+	color:white;
+	height:300px;
+}
+.jumbotron h2{
+	line-height: 4.5;
+	font-size:40px;
+	font-weight: bold;
+	font-family: "cursive";
+}
+ul li{
+	padding:10px;
+}
+.nav{
+	background:#F6F4FF;
+	border-radius: 5px;
+	margin-bottom:2px;
+}
+.scrapedData-container{
+	text-align:center;
+
+}
+.content{
+	border:1px solid white;
+	width:auto;
+	margin-bottom:10px;
+}
+.scrap-title{
+	height:50px;
+	background:#849FFF;
+	color:white;
+	font-size:25px;
+	font-weight: bold;
+}
+.scrap-link{
+	height:30px;
+	font-size:20px;
+	margin:5px 0 5px 0;
+
+}

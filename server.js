@@ -5,6 +5,7 @@ const mongojs = require("mongojs");
 
 var app = express();
 
+app.use(express.static("public"));
 
 var databaseurl = "todayscrape";
 var collections = ["scrapedData"];
@@ -29,7 +30,7 @@ app.get("/all",function(req,res){
 	});
 });
 //scraping data from newyork times
-app.get("/scrape",function(req,res){
+app.get("/scrap",function(req,res){
 	request("https://www.nytimes.com/",function(err,response,html){
 		var $=cheerio.load(html);
 		 $(".story-heading").each(function(i, element) {
