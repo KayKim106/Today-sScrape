@@ -1,0 +1,25 @@
+{
+  "name": "todaysscrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KayKim106/Today-sScrape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KayKim106/Today-sScrape/issues"
+  },
+  "homepage": "https://github.com/KayKim106/Today-sScrape#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "mongojs": "^2.5.0",
+    "request": "^2.85.0"
+  }
+}
