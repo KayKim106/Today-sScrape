@@ -38,8 +38,9 @@ app.get("/scrap",function(req,res){
       var title = $(element).children("a").text();
       var link = $(element).children("a").attr("href");
       	//if title and link is scrapping correctly, then run the below code
-		if(title&&link){
-			db.scrapedData.insert({
+		if(title&&link){ 		//if title and link are true(can get a data)
+			db.scrapedData.insert({	//insert the data to the scrapedData database
+				
 				title:title,
 				link:link
 			},
@@ -54,7 +55,7 @@ app.get("/scrap",function(req,res){
 		}
 		});
 	});
-res.send("Scraped!");
+res.send("Scraped!");				//if everthings runs well, then send out the MSG
 });
 app.listen(3000,function(){
 	console.log("App listening Port : 3000");
