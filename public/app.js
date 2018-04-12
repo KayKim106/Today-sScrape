@@ -1,7 +1,7 @@
 function displayScraped(data){
-	$(".scrapedData-container").empty();
+	$(".scrapedData-container").empty();	//clearing the element whatever inside of it
 
-	data.forEach(function(scraps){
+	data.forEach(function(scraps){  	//looping the data what was collected by Json type
 	console.log(scraps);
 	$(".scrapedData-container").append("<div class='content'>"+
 	"<div class='scrap-title'>Head Line : " + scraps.title+"<button class='btn button-primary savebtn'>"+"Save it"+"</button>"+
@@ -10,8 +10,8 @@ function displayScraped(data){
 	});
 }
 
-$.getJSON("/all", function(data) {
-  // Call our function to generate a table body
+$.getJSON("/all", function(data) { 		//gettubg data and passit to diplayscraped function to display on front end 
+ 
   displayScraped(data);
 });
 
