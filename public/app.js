@@ -3,9 +3,10 @@ function displayScraped(data){
 
 	data.forEach(function(scraps){
 	console.log(scraps);
-	$(".scrapedData-container").append("<div class='content'>"+"<div class='scrap-title'>" + scraps.title+"</div>"+
-															   "<div class='scrap-link'>" + scraps.link +"</div>"+
-									   "</div>");
+	$(".scrapedData-container").append("<div class='content'>"+
+	"<div class='scrap-title'>Head Line : " + scraps.title+"<button class='btn button-primary savebtn'>"+"Save it"+"</button>"+
+	"<button class='btn button-primary notebtn'>"+"Note"+"</button>"+"</div>"+"<div class='scrap-link'>Link : "
+	+ scraps.link +"</div>"+"</div>");
 	});
 }
 
@@ -14,9 +15,16 @@ $.getJSON("/all", function(data) {
   displayScraped(data);
 });
 
-$(".saved").on("click",function(){
+$(".scraps").on("click",function(){
+	
 	$.getJSON("/all",function(data){
+		count =(data.length);
+
+		
 		displayScraped(data);
+		alert("New"+" "+count+" "+"Articles are scrapped!");
 	});
-	alert("clicked!");
+	
 });
+$(".saved").on("click",function(){
+})

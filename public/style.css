@@ -3,7 +3,7 @@ body{
 	padding:0;
 }
 .container{
-	width:1200px;
+	max-width:1200px;
 }
 .jumbotron{
 	background-image:url(banner.jpg);
@@ -27,24 +27,35 @@ ul li{
 	margin-bottom:2px;
 }
 .scrapedData-container{
-	text-align:center;
+	text-align:left;
 
 }
 .content{
 	border:1px solid white;
-	width:auto;
+	width:100%
 	margin-bottom:10px;
 }
 .scrap-title{
 	height:50px;
 	background:#849FFF;
 	color:white;
-	font-size:25px;
+	font-size:20px;
 	font-weight: bold;
+	padding-left:5px;
 }
 .scrap-link{
 	height:30px;
-	font-size:20px;
+	font-size:15px;
 	margin:5px 0 5px 0;
+	padding-left:5px;
 
+}
+.savebtn, .notebtn{
+	float:right;
+	height:40px;
+	margin:5px 5px 5px 0;
+
+}
+.nav-link{
+	color:white !important;
 }
